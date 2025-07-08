@@ -15,5 +15,7 @@ const products = [
 
 const results = products.filter(product=>product.category==="electronics"&& product.price>200)
                         .map(product=>product.price).reduce()
-                    
+    const totalPrice = results.reduce((accumulator,currentValue)=>{
+        return accumulator+ currentValue
+    }  ,0 )          
                         
