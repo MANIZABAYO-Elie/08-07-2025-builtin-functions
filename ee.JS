@@ -14,8 +14,10 @@ const products = [
 ]
 
 const results = products.filter(product=>product.category==="electronics"&& product.price>200)
-                        .map(product=>product.price).reduce()
+                        .map(product=>product.price)
     const totalPrice = results.reduce((accumulator,currentValue)=>{
         return accumulator+ currentValue
-    }  ,0 )          
+    }  ,0 )
+    console.log(results)   
+    console.log(totalPrice)       
                         
